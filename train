@@ -1,0 +1,1029 @@
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_27_depth_4"
+NUM_FILTERS=64
+LAMBDA=0.03
+ETA=0.8
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=45
+MAX_TRAIN_STEPS=1000000
+export CUDA_VISIBLE_DEVICES=1
+
+python CS_IoT27_depth_4.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_27_depth_3"
+NUM_FILTERS=64
+LAMBDA=0.03
+ETA=0.8
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=45
+MAX_TRAIN_STEPS=1000000
+export CUDA_VISIBLE_DEVICES=1
+
+python CS_IoT27_depth_3.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/t*
+MODEL_PATH="model/CS_IoT_27_depth_2"
+NUM_FILTERS=64
+LAMBDA=0.03
+ETA=0.8
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=1000000
+export CUDA_VISIBLE_DEVICES=1
+
+python CS_IoT27_depth_2.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/t*
+MODEL_PATH="model/CS_IoT_27_new_depth_2_lmb003_eta15"
+NUM_FILTERS=64
+LAMBDA=0.03
+ETA=1.5
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=1
+
+python CS_IoT27_new_depth_2.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/t*
+MODEL_PATH="model/CS_IoT_27_new_depth_2_w16_lmb003_eta08"
+NUM_FILTERS=64
+LAMBDA=0.03
+ETA=0.8
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=1
+
+python CS_IoT27_new_depth_2_w16.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/t*
+MODEL_PATH="model/CS_IoT_27_new_depth_2_w16_without_mean_33_lmb003_eta35"
+NUM_FILTERS=64
+LAMBDA=0.03
+ETA=3.5
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=1
+
+python CS_IoT27_new_depth_2_w16_without_mean_33.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/t*
+MODEL_PATH="model/CS_IoT_27_depth_2_width32_lmb003_eta08"
+NUM_FILTERS=64
+LAMBDA=0.03
+ETA=0.8
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=1000000
+export CUDA_VISIBLE_DEVICES=1
+
+python CS_IoT27_depth_2_width32.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/t*
+MODEL_PATH="model/CS_IoT_27_depth_2_width16_lmb003_eta08"
+NUM_FILTERS=64
+LAMBDA=0.03
+ETA=0.8
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=1
+
+python CS_IoT27_depth_2_width16.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/t*
+MODEL_PATH="model/CS_IoT_27_2017_depth_2"
+NUM_FILTERS=64
+LAMBDA=0.03
+ETA=0.8
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=400000
+export CUDA_VISIBLE_DEVICES=1
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/t*
+MODEL_PATH="model/CS_IoT_27_2017_depth_2_lmb003_eta15"
+NUM_FILTERS=64
+LAMBDA=0.03
+ETA=0.8
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=400000
+export CUDA_VISIBLE_DEVICES=1
+
+python CS_IoT27_2017_depth_2.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+original lmb 0.025 eta 0.7
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_19_kitti_16_depth_2_reshape_lmb0025_eta07"
+NUM_FILTERS=64
+LAMBDA=0.025
+ETA=0.7
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=0
+
+python CS_IoT19_kitti_16_depth_2.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_19_kitti_16_depth_2_without_mean_reshape_lmb0025_eta07"
+NUM_FILTERS=64
+LAMBDA=0.025
+ETA=0.7
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=0
+
+python CS_IoT19_kitti_16_depth_2_without_mean.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_19_kitti_16_depth_2_without_33_reshape_lmb0025_eta07"
+NUM_FILTERS=64
+LAMBDA=0.025
+ETA=0.7
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=1
+
+python CS_IoT19_kitti_16_depth_2_without_33.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_19_kitti_16_depth_2_without_mean_33_yuv_reshape_lmb0025_eta07_72_24_30"
+NUM_FILTERS=64
+LAMBDA=0.025
+ETA=0.7
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=1
+
+python CS_IoT19_kitti_16_depth_2_without_mean_33_yuv.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_19_kitti_16_depth_2_without_mean_33_yuv_v2_reshape_lmb0025_eta07_72_24_30"
+NUM_FILTERS=64
+LAMBDA=0.025
+ETA=0.7
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=1
+
+python CS_IoT19_kitti_16_depth_2_without_mean_33_yuv_v2.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_19_kitti_16_depth_2_without_mean_33_yuv_v2_learn_yuv_reshape_lmb0025_eta07_60_30_30"
+NUM_FILTERS=64
+LAMBDA=0.025
+ETA=0.7
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=0
+
+python CS_IoT19_kitti_16_depth_2_without_mean_33_yuv_v2_learn_yuv.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_19_kitti_16_depth_2_without_mean_33_yuv_v3_learn_yuv_reshape_lmb0025_eta07_72_24_30"
+NUM_FILTERS=64
+LAMBDA=0.025
+ETA=0.7
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=0
+
+python CS_IoT19_kitti_16_depth_2_without_mean_33_yuv_v3_learn_yuv.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv_reshape_lmb0003_eta16_72_24_30"
+NUM_FILTERS=64
+LAMBDA=0.003
+ETA=1.6
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=1
+
+python CS_IoT19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_19_city_16_depth_2_without_mean_33_yuv_v4_learn_yuv_w10_without_hype_reshape_lmb003_eta08_48_28_10"
+NUM_FILTERS=64
+LAMBDA=0.03
+ETA=0.8
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=0
+
+python CS_IoT19_city_16_depth_2_without_mean_33_yuv_v4_learn_yuv_w10_without_hype.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv_w10_without_hype_reshape_lmb0025_eta07_48_28_10"
+NUM_FILTERS=64
+LAMBDA=0.025
+ETA=0.7
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=500000
+export CUDA_VISIBLE_DEVICES=0
+
+python CS_IoT19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv_w10_without_hype.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_19_kitti_16_depth_2_without_mean_33_yuv_v4_classical_yuv_w10_without_hype_reshape_lmb0025_eta07_48_28_10_v2_crop_train"
+NUM_FILTERS=64
+LAMBDA=0.025
+ETA=0.7
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=0
+
+python CS_IoT19_kitti_16_depth_2_without_mean_33_yuv_v4_classical_yuv_w10_without_hype.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv_w10_without_hype_relu_iden_grad_reshape_lmb0025_eta07_48_28_10"
+NUM_FILTERS=64
+LAMBDA=0.025
+ETA=0.7
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=0
+
+python CS_IoT19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv_w10_without_hype_relu_iden_grad.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv_w10_without_hype_quantize_correction_reshape_lmb0025_eta07_48_28_10"
+NUM_FILTERS=64
+LAMBDA=0.025
+ETA=0.7
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=1
+
+python CS_IoT19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv_w10_without_hype_quantize_correction.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv_w10_intra_predict_2_reshape_lmb0025_eta07_48_28_10"
+NUM_FILTERS=64
+LAMBDA=0.025
+ETA=0.7
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=1
+
+python CS_IoT19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv_w10_intra_predict.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv_w10_without_hype_ssim_reshape_lmb018_eta07_48_28_10"
+NUM_FILTERS=64
+LAMBDA=0.18
+ETA=0.7
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=150000
+export CUDA_VISIBLE_DEVICES=0
+
+python CS_IoT19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv_w10_without_hype_ssim.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv_w10_without_hype_RNN_reshape_lmb0025_eta07_48_28_10"
+NUM_FILTERS=64
+LAMBDA=0.025
+ETA=0.7
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=0
+
+python CS_IoT19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv_w10_without_hype_RNN.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv_w10_without_hype_RNN_2_reshape_lmb0025_eta07_48_28_10"
+NUM_FILTERS=64
+LAMBDA=0.025
+ETA=0.7
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=0
+
+python CS_IoT19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv_w10_without_hype_RNN_2.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv_w10_without_hype_filt32_reshape_lmb0025_eta07_48_28_10"
+NUM_FILTERS=32
+LAMBDA=0.025
+ETA=0.7
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=1
+
+python CS_IoT19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv_w10_without_hype_filt32.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv_w16_without_hype_group_init_reshape_lmb0025_eta07_48_28_10"
+NUM_FILTERS=64
+LAMBDA=0.025
+ETA=0.7
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=0
+
+python CS_IoT19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv_w10_without_hype_group_init.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv_w12_reshape_lmb0025_eta07_72_24_30"
+NUM_FILTERS=64
+LAMBDA=0.025
+ETA=0.7
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=0
+
+python CS_IoT19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv_w12.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv_without_hype_reshape_lmb0025_eta07_72_24_30"
+NUM_FILTERS=64
+LAMBDA=0.025
+ETA=0.7
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=1
+
+python CS_IoT19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv_without_hype.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv_multi_measure_reshape_lmb0025_eta07_72_24_30_patch_80"
+NUM_FILTERS=64
+LAMBDA=0.025
+ETA=0.7
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=1
+
+python CS_IoT19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv_multi_measure.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_19_kitti_16_depth_2_without_mean_33_yuv_v3_learn_yuv_dct_test_8_reshape_lmb0025_eta07_72_24_30"
+NUM_FILTERS=64
+LAMBDA=0.025
+ETA=0.7
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=1
+
+python CS_IoT19_kitti_16_depth_2_without_mean_33_yuv_v3_learn_yuv_dct_test.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_19_kitti_16_depth_2_without_mean_33_yuv_v3_learn_yuv_dct_test2_2_reshape_lmb0025_eta07_72_24_30"
+NUM_FILTERS=64
+LAMBDA=0.025
+ETA=0.7
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=1
+
+python CS_IoT19_kitti_16_depth_2_without_mean_33_yuv_v3_learn_yuv_dct_test2.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv_dct_v2_3_reshape_lmb0025_eta07_72_24_30_try2"
+NUM_FILTERS=64
+LAMBDA=0.025
+ETA=0.7
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=1
+
+python CS_IoT19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv_dct_v2.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_19_kitti_16_depth_2_without_mean_33_yuv_v3_learn_yuv_learn_quan_reshape_lmb0025_eta07_72_24_30"
+NUM_FILTERS=64
+LAMBDA=0.025
+ETA=0.7
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=1
+
+python CS_IoT19_kitti_16_depth_2_without_mean_33_yuv_v3_learn_yuv_learn_quan.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_19_kitti_16_depth_2_without_mean_33_yuv_v2_multi_sample_reshape_lmb0025_eta07_72_24_30"
+NUM_FILTERS=64
+LAMBDA=0.025
+ETA=0.7
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=1
+
+python CS_IoT19_kitti_16_depth_2_without_mean_33_yuv_v2_multi_sample.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_19_kitti_16_depth_2_without_mean_33_reshape_lmb001_eta10"
+NUM_FILTERS=64
+LAMBDA=0.01
+ETA=1.0
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=1
+
+python CS_IoT19_kitti_16_depth_2_without_mean_33.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_19_kitti_16_depth_2_without_mean_33_residual_block_reshape_lmb0025_eta07"
+NUM_FILTERS=64
+LAMBDA=0.025
+ETA=0.7
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=0
+
+python CS_IoT19_kitti_16_depth_2_without_mean_33_residual_block.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_19_kitti_16_depth_2_without_mean_33_correction_reshape_lmb0025_eta07"
+NUM_FILTERS=64
+LAMBDA=0.025
+ETA=0.7
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=1
+
+python CS_IoT19_kitti_16_depth_2_without_mean_33_correction.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+MODEL_PATH="model/CS_IoT_19_kitti_16_depth_2_sum_reshape_lmb0003_eta16"
+NUM_FILTERS=64
+LAMBDA=0.003
+ETA=1.6
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=50000
+export CUDA_VISIBLE_DEVICES=1
+
+python CS_IoT19_kitti_16_depth_2_sum.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_19_kitti_16_depth_2_sum_reshape"
+NUM_FILTERS=64
+LAMBDA=0.003
+ETA=1.6
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=50000
+export CUDA_VISIBLE_DEVICES=0
+
+python CS_IoT19_kitti_16_depth_2.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/DCT_RGB_grad2"
+NUM_FILTERS=64
+LAMBDA=0.03
+ETA=0.8
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=45
+MAX_TRAIN_STEPS=1000000
+export CUDA_VISIBLE_DEVICES=0
+
+python DCT_RGB_grad2.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/DCT_grad2"
+NUM_FILTERS=64
+LAMBDA=0.03
+ETA=0.8
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=45
+MAX_TRAIN_STEPS=1000000
+export CUDA_VISIBLE_DEVICES=0
+
+python DCT_grad2.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv_w10_without_hype_without_feature_residual_reshape_lmb0025_eta07_48_28_10"
+NUM_FILTERS=64
+LAMBDA=0.025
+ETA=0.7
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=0
+
+python CS_IoT19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv_w10_without_hype_without_feature_residual.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv_w10_without_hype_random_sample_reshape_lmb0007_eta13_48_28_10"
+NUM_FILTERS=64
+LAMBDA=0.007
+ETA=1.3
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=0
+
+python CS_IoT19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv_w10_without_hype_random_sample.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
+
+TRAIN_DATA_PATH=../Cityscapes_dataset/leftImg8bit/train
+MODEL_PATH="model/CS_IoT_19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv_w10_without_hype_2d_dct_reshape_lmb0007_eta13_48_28_10"
+NUM_FILTERS=64
+LAMBDA=0.007
+ETA=1.3
+PREPROCESS_THREADS=16
+TRAIN_BATCH_SIZE=30
+MAX_TRAIN_STEPS=300000
+export CUDA_VISIBLE_DEVICES=0
+
+python CS_IoT19_kitti_16_depth_2_without_mean_33_yuv_v4_learn_yuv_w10_without_hype_2d_dct.py \
+--verbose \
+--num_filters ${NUM_FILTERS} \
+--checkpoint_dir ${MODEL_PATH} \
+train \
+--train_glob "${TRAIN_DATA_PATH}/*/*.png" \
+--lambda ${LAMBDA} \
+--eta ${ETA} \
+--preprocess_threads ${PREPROCESS_THREADS} \
+--batchsize ${TRAIN_BATCH_SIZE} \
+--last_step ${MAX_TRAIN_STEPS}
